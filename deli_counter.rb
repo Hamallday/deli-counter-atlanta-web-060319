@@ -18,8 +18,8 @@ def line(shop_name)
     puts "The line is currently empty."
   else
     greeting = ""
-    shop_name.each_with_index do |customer, idx|
-      greeting << " #{idx + 1}. #{customer}"
+    shop_name.each_with_index do |customer, count|
+      greeting << " #{count + 1}. #{customer}"
   end
   puts "The line is currently:#{greeting}"
   end
