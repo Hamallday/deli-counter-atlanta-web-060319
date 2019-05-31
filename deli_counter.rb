@@ -17,11 +17,11 @@ def line(shop_name)
   if shop_name == []
     puts "The line is currently empty."
   else
-    fragment = ""
+    greeting = ""
     shop_name.each_with_index do |customer, idx|
-      fragment << " #{idx + 1}. #{customer}"
+      greeting << " #{idx + 1}. #{customer}"
   end
-  puts "The line is currently:#{fragment}"
+  puts "The line is currently:#{greeting}"
   end
 end
 
